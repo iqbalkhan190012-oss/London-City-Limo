@@ -20,6 +20,15 @@
             font-size: 16px;
             color: #666;
             margin-top: 0;
+            margin-bottom: 20px;
+        }
+        /* NEW STYLE FOR THE CAR IMAGE */
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin-bottom: 30px;
         }
         h2 {
@@ -38,7 +47,6 @@
             gap: 15px;
             margin: 25px 0;
         }
-        /* Styles for the buttons */
         .text-btn, .call-btn {
             display: inline-block;
             color: white;
@@ -51,10 +59,8 @@
             width: 90%;
             max-width: 350px;
             box-sizing: border-box;
-            line-height: 1.4; /* Helps space out the two lines nicely */
+            line-height: 1.4; 
         }
-        
-        /* Primary Button: Text (Blue) */
         .text-btn {
             background-color: #0078D4; 
             font-size: 22px; 
@@ -62,8 +68,6 @@
         .text-btn:hover {
             background-color: #005a9e;
         }
-
-        /* Secondary Button: Call (Green) */
         .call-btn {
             background-color: #4CAF50; 
             font-size: 18px; 
@@ -71,7 +75,6 @@
         .call-btn:hover {
             background-color: #45a049;
         }
-
         .contact-box { 
             margin-top: 20px; 
             padding: 20px; 
@@ -104,16 +107,14 @@
     <h1>London City Limo</h1>
     <p class="subtitle">Premium Airport & Out-of-Town Transportation</p>
 
-    <hr>
+    <!-- THIS IS THE NEW IMAGE TAG -->
+    <img src="images/car.jpg" alt="London City Limo White Toyota Highlander" class="hero-image">
 
     <h2>Reliable Limo Service in London, ON</h2>
     <p>We specialize in airport transfers, corporate travel, long-distance rides, and special events. Book your ride today!</p>
     
-    <!-- TEXT BUTTON FIRST, CALL BUTTON SECOND -->
     <div class="btn-container">
-        <!-- Notice the <br> tag added here to break the line -->
         <a href="sms:+15198715426" class="text-btn">💬 TEXT NOW:<br>(519) 871-5426</a>
-        
         <a href="tel:+15198715426" class="call-btn">📞 OR CALL US</a>
     </div>
 
