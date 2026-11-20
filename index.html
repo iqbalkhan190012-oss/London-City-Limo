@@ -6,7 +6,7 @@
     
     <!-- SEO Title and Description for Google -->
     <title>London City Limo | Airport & Chauffeur Service in London, Ontario</title>
-    <meta name="description" content="Premium limo and airport transfer service in London, Ontario, Canada. Book your ride with London City Limo today.">
+    <meta name="description" content="Premium limo and airport transfer service in London, Ontario, Canada. Fully licensed, insured, and trusted. Book your ride with London City Limo today.">
 
     <style>
         body {
@@ -24,7 +24,7 @@
         }
         
         .subtitle {
-            font-size: 18px; /* Made slightly larger */
+            font-size: 18px;
             color: #555;
             margin-top: 0;
             margin-bottom: 20px;
@@ -49,7 +49,7 @@
             font-size: 18px;
             line-height: 1.6;
             max-width: 600px;
-            margin: 0 auto 20px auto; /* Centers the paragraph text */
+            margin: 0 auto 20px auto;
         }
         
         .btn-container {
@@ -92,15 +92,100 @@
         .call-btn:hover {
             background-color: #45a049;
         }
+
+        /* --- STYLES FOR QUOTE FORM --- */
+        .quote-form {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: left;
+        }
+        
+        .quote-form h2 {
+            text-align: center;
+            margin-top: 0;
+            color: #0078D4;
+        }
+        
+        .quote-form input, .quote-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        
+        .quote-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff9800; /* Orange to stand out from call buttons */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .quote-form button:hover {
+            background-color: #e68a00;
+        }
+        /* -------------------------------- */
         
         .contact-box {
             margin-top: 20px;
             padding: 20px;
-            background: white; /* Kept white so it stands out against the gray background */
+            background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             display: inline-block;
         }
+
+        /* --- STYLES FOR TRUST BOX --- */
+        .trust-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f5e9; /* Very light green */
+            border: 2px solid #4CAF50; /* Green border */
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .trust-box h3 {
+            color: #2e7d32; /* Dark green */
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .trust-box p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .trust-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .trust-list li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        /* -------------------------------- */
         
         .services {
             text-align: left;
@@ -108,7 +193,7 @@
             margin-top: 10px;
             font-size: 18px;
             color: #444;
-            line-height: 1.8; /* Makes the list easier to read */
+            line-height: 1.8;
         }
         
         hr {
@@ -126,7 +211,6 @@
     <h1>London City Limo</h1>
     <p class="subtitle">Premium Airport & Chauffeur Service in London, Ontario</p>
 
-    <!-- Make sure your image is named car.jpg and is inside the images folder -->
     <img src="images/car.jpg" alt="London City Limo White Toyota Highlander" class="hero-image">
 
     <h2>Reliable Limo Service in London, Ontario</h2>
@@ -137,9 +221,51 @@
         <a href="tel:+15198715426" class="call-btn">📞 OR CALL US</a>
     </div>
 
+    <!-- QUOTE REQUEST FORM -->
+    <!-- Note: FormSubmit requires a one-time email activation on the first submission -->
+    <div class="quote-form">
+        <h2>Get a Free Quote</h2>
+        <form action="https://formsubmit.co/info@londoncitylimo.com" method="POST">
+            
+            <!-- FormSubmit Settings -->
+            <input type="hidden" name="_subject" value="New Quote Request - London City Limo">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="Name" required placeholder="John Doe">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="Phone" required placeholder="(519) 123-4567">
+
+            <label for="pickup">Pickup Address / Airport:</label>
+            <input type="text" id="pickup" name="Pickup Location" required placeholder="e.g., YXU Airport or 123 Main St">
+
+            <label for="dropoff">Dropoff Address:</label>
+            <input type="text" id="dropoff" name="Dropoff Location" required placeholder="e.g., 456 Richmond St, London">
+
+            <label for="datetime">Date & Time of Ride:</label>
+            <input type="datetime-local" id="datetime" name="Date and Time" required>
+
+            <button type="submit">Request Quote</button>
+        </form>
+    </div>
+
     <div class="contact-box">
-        <p style="margin: 0;">Prefer to email?</p>
+        <p style="margin: 0;">Prefer to email us directly?</p>
         <p style="margin: 5px 0 0 0; font-size: 18px;"><a href="mailto:info@londoncitylimo.com">info@londoncitylimo.com</a></p>
+    </div>
+
+    <!-- TRUST SECTION -->
+    <div class="trust-box">
+        <h3>Why Book With Us?</h3>
+        <p>We are a fully licensed and regulated transportation provider.</p>
+        <ul class="trust-list">
+            <li>✅ <strong>City of London Taxi & Limousine License</strong></li>
+            <li>✅ <strong>City of London Limousine Plate</strong></li>
+            <li>✅ <strong>Commercial Limousine Insurance</strong> (Fully Insured)</li>
+            <li>✅ <strong>Professional & Vetted Chauffeurs</strong></li>
+        </ul>
     </div>
 
     <hr>
@@ -147,7 +273,7 @@
     <h2>Our Services</h2>
     <ul class="services">
         <li>✈️ Airport Transfers (YXU, YYZ, YTZ & Detroit DTW)</li>
-        <li>💍 Wedding Transportation</li>
+        <li>💍 Wedding & Special Event Transfers</li>
         <li>💼 Corporate Travel</li>
         <li>🚗 Out-of-Town Rides</li>
     </ul>
